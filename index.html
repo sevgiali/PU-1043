@@ -15,8 +15,7 @@
     }
 </script>
 <button onclick="visitPage();">Think about us </button>
-    
-	
+   
 
  <a href="http://wallpapersfan.ru/wp-content/uploads/2016/11/besplatnye-fotooboi-pandy-na-otdyhe-skachat-dlya-rabochego-stoa-1920x1080-760x428.jpg"><img src="pandichka2.png" style="float:left"></a>
 <h2>There's still time </h2>
@@ -32,6 +31,39 @@
 function showText() 
 {
 document.getElementById('hiddenText').style.display='inline';
+}
+</script>
+
+
+ 
+	<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">MENU</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+
+<script>
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
 }
 </script>
 <footer> Sev Team</footer>
